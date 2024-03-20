@@ -2,3 +2,7 @@
     height: 300px;
     object-fit: cover;
 }
+
+body {
+    background: url(../images/desert.jpg); 
+}

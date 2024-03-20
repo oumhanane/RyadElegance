@@ -29,7 +29,7 @@ class ProductType extends AbstractType
                 'divisor' => 100
             ])
             ->add('image', TextType::class,[
-                'label' => 'Image de la catégorie',
+                'label' => 'Image du produit',
                 'required' => false,
                 'attr' => [
                     'placeholder' => 'Ajouter le chemin de l\'image ici'
@@ -37,7 +37,8 @@ class ProductType extends AbstractType
             ])
             ->add('category', EntityType::class, [
                 'class' => Category::class,
-                'choice_label' => 'name',
+                // 'choice_label' => 'name',
+                'label' => 'Catégorie',
                 'required' => false,
                 'placeholder' => '-- Choisir --',
             ])

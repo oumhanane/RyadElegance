@@ -39,6 +39,9 @@
 {% endblock %} #}
 
 
+
+
+{% extends 'admin/base.html.twig' %} 
 {% block title %}
 {% endblock %}
 
@@ -58,8 +61,9 @@
 					<div class="card">
 						<img src="{{ product.image }}" class="card-img-top imageCard" alt="image_product">
 						<div class="card-body">
-							<h5 class="card-title">{{ product.name }}</h5>
-							<a href="{{ path('admin_product_edit', {'id' : product.id } ) }}" class="btn btn-primary w-100">Gérer</a>
+							<h5 class="card-title">{{ product.name | upper }}</h5>
+                            <p> {{ product.price | priceEuro }}
+							<a href="{{ path('admin_product_edit', {'id' : product.id } ) }}" class="btn btn-warning w-100">Gérer</a>
 						</div>
 					</div>
 				</div>
@@ -67,4 +71,4 @@
 		</div>
 	</div>
 
-{% endblock %}
+{% endblock %} 

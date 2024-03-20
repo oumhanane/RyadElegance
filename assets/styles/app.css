@@ -1,3 +1,7 @@
-body {
+/* body {
     background-color: skyblue;
+} */
+
+body {
+    background: url(../images/desert.jpg)
 }
