@@ -3,6 +3,11 @@
     object-fit: cover;
 }
 
+.imageCarousel {
+    height: 500px;
+    object-fit: cover;
+}
+
 body {
     background: url(../images/desert.jpg); 
 }
