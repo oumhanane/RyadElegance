@@ -7,24 +7,6 @@
 {% block body %}
 
 	<div class="container py-5">
-		{# <div class="row">
-			<div class="col-12">
-				<h3 class="text-center">Les catégories</h3>
-			</div>
-
-			{% for category in categories %}
-				<div class="col-sm-12 col-md-6 col-lg-4 mt-3">
-					<div class="card">
-						<img src="{{ category.image }}" class="card-img-top imageCard" alt="image_category">
-						<div class="card-body">
-							<h5 class="card-title">{{ category.name | upper }}</h5>
-							<a href="#" class="btn btn-secondary w-100">Consulter</a>
-						</div>
-					</div>
-				</div>
-			{% endfor %}
-
-		</div> #}
 
 		<div class="row">
 			<div class="col-12 mt-5">
@@ -38,7 +20,7 @@
 						<div class="card-body">
 							<h5 class="card-title">{{ product.name | upper }}</h5>
 							<p>{{ product.price | priceEuro }}</p>
-							<a href="#" class="btn btn-secondary w-100">Consulter</a>
+							<a href="{{ path('boutique_product_detail',{'id': product.id}) }}" class="btn btn-secondary w-100">Consulter</a>
 						</div>
 					</div>
 				</div>

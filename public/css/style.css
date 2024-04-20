@@ -11,3 +11,8 @@
 body {
     background: url(../images/desert.jpg); 
 }
+
+.imageDetailProduct {
+    height: 600px;
+    object-fit: cover;
+}

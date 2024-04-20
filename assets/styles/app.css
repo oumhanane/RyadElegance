@@ -5,3 +5,8 @@
 body {
     background: url(../images/desert.jpg)
 }  */
+
+.imageDetailProduct {
+    height: 500px;
+    object-fit: cover;
+}
