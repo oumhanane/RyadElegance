@@ -1,6 +1,6 @@
 <?php  
 
-namespace App\Service\cart;
+namespace App\Services\Cart;
 
 class CartItem 
 {
