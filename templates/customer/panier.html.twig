@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			{% include "_messages_flash.html.twig" %}
-			<div>
+			<div class="col-12 mb-3">
 				<table class="table">
 					<thead>
 						<tr>
@@ -61,7 +61,11 @@
 					</tbody>
 				</table>
 			</div>
+			<div class="col-12 d-flex justify-content-end">
+				<a href="{{ path('boutique_commande_recap') }}" class="btn btn-success">Valider le panier</a>
+			</div>
 		</div>
 	</section>
 
 {% endblock %}
+ 
